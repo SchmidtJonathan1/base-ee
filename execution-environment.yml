@@ -2,7 +2,13 @@
 version: 1
 
 build_arg_defaults:
-  EE_BASE_IMAGE: 'registry.redhat.io/ansible-automation-platform-23/ee-minimal-rhel8:latest'
+  ## Old Image AAP 2.3
+  # EE_BASE_IMAGE: 'registry.redhat.io/ansible-automation-platform-23/ee-minimal-rhel8:latest'
+  ## AAP 2.4 RHEL 8
+  # EE_BASE_IMAGE: 'registry.redhat.io/ansible-automation-platform-24/ee-minimal-rhel8:latest'
+  ## AAP 2.4 RHEL 9
+  EE_BASE_IMAGE: 'registry.redhat.io/ansible-automation-platform-24/ee-minimal-rhel9:latest'
+  
 
 dependencies:
   galaxy: requirements.yml
